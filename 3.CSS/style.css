@@ -1,0 +1,85 @@
+/* 
+Selector {
+	Property: value;
+}
+*/
+
+/*cascading -> it always takes the selector which is at the end
+.class -> class is a good way to select a group of element and apply the same style to it
+#id -> similar to class but you can use the same id only once 
+*-> it symbolizes all elements
+element -> apply style to element
+element1, element2 -> apply style to element 1 and 2
+element1 element2 -> apply styles to only element2 that are in element1
+element1 > element2 -> apply style to element2 who has direct parent as element1
+element1 + element2 -> apply to element2 if in html element2 comes right after element1
+:hover -> change the style when hovered
+:last-child -> apply style to the last child of element
+:first-child -> apply style to the first child of element
+*/
+
+
+/* *{
+	text-align: right;
+}*/
+body {
+	background-image: url(image-1.jpg);
+	background-size: cover;
+}
+
+h2, p {
+	color: red;
+	text-align: center;
+	background-color: #FFF633;
+	border: 5px solid rgba(64, 127, 127, 0.8);
+	cursor: pointer;
+}
+
+p {
+	color: pink;
+}
+
+p {
+	color: darkblue;
+	text-decoration: underline;
+	text-transform: lowercase;
+	line-height: 30px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 180%;
+	font-family: "Poiret One", sans-serif;
+}
+
+/*images floating towards left and right and text wrap around them*/
+img {
+	float: left;
+}
+
+/*always used after the float is used so that it doesnt wrap around image*/
+footer {
+	clear: both;
+	text-align: center;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
+
+.webtext {
+	border: 5px dashed green;
+	cursor: text;
+}
+
+.active {
+	color: red;
+}
+
+#div1 {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+h2:hover {
+	color: darkblue;
+}
+

@@ -1,0 +1,29 @@
+h2 {
+	color: blue;
+}
+
+.boxmodel {
+	border: 5px solid red;
+	display: inline-block;
+	padding: 5px 20px 5px 20px;
+	margin: 0px 20px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+}
+
+/*font-size of the span will be 3 times of containing element (in our case p tag)*/
+/*so if we change font size of p to 30px then span font size will be 3 times of that i.e 90px*/
+span {
+	font-size: 3em;
+}
+
+/*5 times relative to the root element - html document*/
+
+/*span {
+	font-size: 5rem;
+}*/
